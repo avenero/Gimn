@@ -1,0 +1,88 @@
+#box{
+margin-top: 120px;
+overflow: hidden;
+border-radius: 5px;
+box-shadow: 0px 2px 5px #ccc;
+padding: 0px;
+}
+
+#section{
+  margin-top: 80px;
+
+}
+
+#header{
+color: rgb(39, 90, 90);
+margin: 5px;
+line-height: 90px;
+background-color: rgb(174, 224, 226);
+margin: 0px;
+
+}
+
+#header h1{
+  font-size: 50px;
+}
+
+#p{
+  margin-top: 15px;
+  margin-left: 300px;
+
+}
+
+#selector{
+margin-left: 0px;
+
+}
+#button{
+  margin-left: 10px;
+
+  }
+
+#button1{
+  margin-left: 10px;
+
+  margin-top: 20px;
+    }
+
+#footer{
+  margin-top: 30px;
+
+  border-top: 1px solid rgb(71, 80, 75);
+}
+
+#nav{
+padding: 0px;
+margin: 0px;
+background: green;
+}
+
+
+#nav ul{
+	margin: 0px;
+	list-style: none;
+	padding-left: 20px;
+
+}
+
+#nav ul li{
+	margin-right: 25px;
+	float: left;
+
+}
+
+#nav ul li a{
+  display: block;
+	color: rgba(33, 173, 52, 0.67);
+	height: 30px;
+	line-height: 29px;
+	padding-left:10px;
+	padding-right:10px;
+	transition: all 300ms;
+}
+
+#nav ul li a:hover{
+  text-decoration: none;
+  background: #b0dfb2;
+  }
+

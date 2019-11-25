@@ -1,0 +1,37 @@
+<div class="container">
+  <div id=box class="jumbotron">
+
+    <header id="header">
+      <h1 id=h1>
+        {{title}}
+      </h1>
+    </header>
+
+    <nav id="nav" >
+
+        <ul>
+            <li><a [routerLink]="['/principal']" >Home</a></li>
+          </ul>
+      <ul>
+        <li><a [routerLink]="['/sold']" >Sold Products</a></li>
+      </ul>
+      <ul>
+        <li><a [routerLink] = "['/ruting']">Gimn Ruting</a></li>
+      </ul>
+
+    </nav>
+
+    <div>
+      <section id="section">
+<h1>This is the principal section</h1>
+<hr>
+        <router-outlet></router-outlet>
+
+      </section>
+    </div>
+<div>
+    <footer id=footer>
+      <p id="p">Esta es la pagina para gestionar Usuarios y Administradores de GIMN</p>
+    </footer>
+  </div>
+  </div>
