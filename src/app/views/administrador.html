@@ -1,13 +1,12 @@
-<h4>{{titulo}}</h4>
-
-<form #MyForm = "ngForm" class= "col-lg-5" NgModel>
+<form [formGroup]="name">
   <label>
-    User
+    Username:
+    <input type="text" formGroup="Username">
   </label>
-  <input type="text" placeholder="user" required>
 
-
-  <label>Pass</label>
-  <input type="text" required>
-
+  <label>
+    Password:
+    <input type="text" formGroup="Password">
+  </label>
 </form>
+<button class = "btn btn-success" type= "submit" [disabled]=!name.valid>Log in</button>

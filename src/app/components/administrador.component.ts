@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -8,15 +9,19 @@ import { Component } from '@angular/core';
 
 export class AdministradorComponent{
 
-  public titulo: string;
+  name = new FormGroup({
+    Username: new FormControl(''),
+    Password: new FormControl(''),
+  });
 
-  constructor(){
-
-    this.titulo = "Componente administrador";
-  }
+ constructor(){}
 
   ngOnInit(){
 
     console.log("componente funcionando");
+  }
+
+  OnSubmit(){
+    console.log(this.name.value);
   }
 }
